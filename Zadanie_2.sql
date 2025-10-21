@@ -42,6 +42,7 @@ VALUES
 	(ST_GeomFromText('POINT(1 3.5)'), 'G'),
 	(ST_GeomFromText('POINT(5.5 1.5)'), 'H'),
 	(ST_GeomFromText('POINT(9.5 6)'), 'I'),
+	(ST_GeomFromText('POINT(6.5 6)'), 'J'),
 	(ST_GeomFromText('POINT(6 9.5)'), 'K');
 
 
@@ -149,4 +150,5 @@ SELECT
             (SELECT geometry FROM buildings WHERE name = 'BuildingC')
         	)
     )  AS pole;
+
 
